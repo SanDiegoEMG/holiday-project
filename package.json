@@ -1,0 +1,29 @@
+{
+  "name": "holiday-project",
+  "version": "1.0.0",
+  "description": "initiating burger project with sequelize",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanDiegoEMG/holiday-project.git"
+  },
+  "keywords": [
+    "bootcamp",
+    "full-stack"
+  ],
+  "author": "Em Goss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanDiegoEMG/holiday-project/issues"
+  },
+  "homepage": "https://github.com/SanDiegoEMG/holiday-project#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}
