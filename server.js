@@ -11,9 +11,17 @@ app.get("/", function (req, res) {
     res.send("Someday over the rainbow")
 });
 
-app.get("/raining", function (req, res) {
-    res.send("The sun will come out tomorrow")
+app.get("/api", function (req, res) {
+    db.burger.findAll({}).then(function(data){
+        res.json(data);
+    })
 });
+
+app.post("/api/new", function(req, res){
+    db.burger.create(req.body).then(function(data){
+        res.json(data);
+    })
+})
 
 db.sequelize.sync({ force: true }).then(function () {
     app.listen(PORT, function () {
